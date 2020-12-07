@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">TCC</string>
+    <string name="fourpets">Four Pets</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="esqueci_minha_senha"><u>Esqueci minha senha</u></string>
+    <string name="entrar">Entrar</string>
+    <string name="sem_conta_cadastre_se_aqui">Ainda não tem conta? Cadastre-se aqui</string>
+    <string name="continuar_sem_login"><u>Continuar sem login</u></string>
+    <string name="voltar">Voltar</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="carrinho">Carrinho</string>
+    <string name="criar_conta">Criar Conta</string>
+    <string name="preencha_os_campos">Preencha os campos com suas informações <br /><br /> A senha deve conter letras minúsculas, maiúsculas e no mínimo 8 caracateres</string>
+    <string name="vazio" />
+    <string name="confirme_sua_senha">Confirme sua senha</string>
+    <string name="concordo_com_os_termos">Concordo com os <u><i>termos de uso e privacidade</i></u></string>
+    <string name="desejo_receber_promocoes">Desejo receber promoções por email</string>
+    <string name="home">Home</string>
+    <string name="categorias">Categorias</string>
+    <string name="minha_conta">Minha Conta</string>
+
 </resources>

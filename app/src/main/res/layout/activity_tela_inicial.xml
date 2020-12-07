@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TelaInicial">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txtHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/home"
+            android:textAlignment="center"
+            android:textColor="@color/verde"
+            android:textSize="14sp"
+            app:drawableTint="@color/verde"
+            app:drawableTopCompat="@drawable/telainicial_home" />
+
+        <TextView
+            android:id="@+id/txtCategoriasBaixo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="@string/categorias"
+            android:textAlignment="center"
+            app:drawableTint="@color/cinza"
+            app:drawableTopCompat="@drawable/telainicial_categoria" />
+
+        <TextView
+            android:id="@+id/txtCarrinhoBaixo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/carrinho"
+            android:textAlignment="center"
+            app:drawableTint="@color/cinza"
+            app:drawableTopCompat="@drawable/telainicial_carrinho" />
+
+        <TextView
+            android:id="@+id/txtMinhaContaBaixo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/minha_conta"
+            android:textAlignment="center"
+            app:drawableTint="@color/cinza"
+            app:drawableTopCompat="@drawable/telainicial_minhaconta" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
