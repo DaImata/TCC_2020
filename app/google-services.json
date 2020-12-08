@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "698663622061",
+    "project_id": "tccpetshop-72a9a",
+    "storage_bucket": "tccpetshop-72a9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698663622061:android:387335873d9e293cd1bd24",
+        "android_client_info": {
+          "package_name": "com.example.tcc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698663622061-bdubgl159lnhr5rnc8ms7rfg3ubdpe58.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tcc",
+            "certificate_hash": "1ade06e4deda2555467721f66e1adfe974359158"
+          }
+        },
+        {
+          "client_id": "698663622061-68bs094kn1s0slvk8nvk2kosfahhpel2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj_fMgpo6qYbRuyb_gyUZtVEDY0ig5n4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698663622061-68bs094kn1s0slvk8nvk2kosfahhpel2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

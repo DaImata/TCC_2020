@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/ic_home"
+        android:icon="@drawable/telainicial_home"
+        android:title="@string/home">
+    </item>
+
+    <item android:id="@+id/ic_categorias"
+        android:icon="@drawable/telainicial_categoria"
+        android:title="@string/categorias">
+    </item>
+
+    <item android:id="@+id/ic_carrinho"
+        android:icon="@drawable/telainicial_carrinho"
+        android:title="@string/carrinho">
+    </item>
+
+    <item android:id="@+id/ic_minhaconta"
+        android:icon="@drawable/telainicial_minhaconta"
+        android:title="@string/minha_conta">
+    </item>
+</menu>

@@ -14,11 +14,11 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        android:contentDescription="@string/fourpets"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/telalogin_logo"
-        android:contentDescription="@string/fourpets" />
+        app:srcCompat="@drawable/telalogin_logo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
