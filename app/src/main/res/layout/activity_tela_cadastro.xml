@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".activity.TelaCadastro">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/fundoAzul"
         android:orientation="horizontal"
         android:paddingHorizontal="10dp"
@@ -59,18 +59,23 @@
         android:text="@string/criar_conta"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtPreenchaCampos"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/txtPreenchaCampos"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:text="@string/preencha_os_campos"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmailCadastro"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCriarConta" />
 
@@ -81,6 +86,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:text="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/edtEmailCadastro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPreenchaCampos" />
 
@@ -95,7 +101,9 @@
         android:ems="10"
         android:hint="@string/vazio"
         android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/txtSenhaCadastro"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEmailCadastro" />
 
@@ -106,6 +114,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:text="@string/senha"
+        app:layout_constraintBottom_toTopOf="@+id/edtSenhaCadastro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtEmailCadastro" />
 
@@ -120,7 +129,9 @@
         android:ems="10"
         android:hint="@string/vazio"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/txtConfirmaSenhaCadastro"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSenhaCadastro" />
 
@@ -131,6 +142,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:text="@string/confirme_sua_senha"
+        app:layout_constraintBottom_toTopOf="@+id/edtConfirmaSenhaCadastro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtSenhaCadastro" />
 
@@ -145,7 +157,9 @@
         android:ems="10"
         android:hint="@string/vazio"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/ckTermos"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtConfirmaSenhaCadastro" />
 
@@ -158,6 +172,7 @@
         android:buttonTint="@color/vermelho"
         android:text="@string/concordo_com_os_termos"
         android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/ckPromocoes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtConfirmaSenhaCadastro" />
 
@@ -170,6 +185,7 @@
         android:buttonTint="@color/vermelho"
         android:text="@string/desejo_receber_promocoes"
         android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCriarConta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ckTermos" />
 
@@ -182,11 +198,32 @@
         android:layout_marginEnd="24dp"
         android:background="@drawable/telalogin_canto_levemente_arredondado"
         android:backgroundTint="@color/fundoAzul"
+        android:onClick="criarConta"
         android:text="@string/criar_conta"
         android:textAllCaps="false"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/progressCadastro"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ckPromocoes" />
+
+    <ProgressBar
+        android:id="@+id/progressCadastro"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:indeterminateTint="@color/vermelho"
+        android:progressTint="@color/vermelho"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCriarConta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

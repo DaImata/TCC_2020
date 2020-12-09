@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fundoAzul"
-    tools:context=".activity.MainActivity" >
+    tools:context=".activity.MainActivity">
 
     <ImageView
         android:id="@+id/imgLogoLogin"
@@ -15,9 +15,12 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:contentDescription="@string/fourpets"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
         app:srcCompat="@drawable/telalogin_logo" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -27,18 +30,20 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogoLogin">
+        app:layout_constraintTop_toBottomOf="@+id/imgLogoLogin"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtEmailLogin"
+            android:id="@+id/edtEmailLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/telalogin_canto_arredondado"
             android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            />
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -48,12 +53,14 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEsqueciSenha"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtSenhaLogin"
+            android:id="@+id/edtSenhaLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/telalogin_canto_arredondado"
@@ -70,6 +77,7 @@
         android:text="@string/esqueci_minha_senha"
         android:textAlignment="textEnd"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnEntrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
@@ -81,10 +89,13 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/telalogin_canto_levemente_arredondado"
+        android:onClick="Entrar"
         android:text="@string/entrar"
         android:textAllCaps="false"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastre_se"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEsqueciSenha" />
 
@@ -100,8 +111,9 @@
         android:text="@string/sem_conta_cadastre_se_aqui"
         android:textAllCaps="false"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/txtContinuarSLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
 
@@ -118,9 +130,28 @@
         android:textAlignment="textEnd"
         android:textColor="@color/white"
         app:drawableEndCompat="@drawable/telalogin_seta_dir"
+        app:layout_constraintBottom_toTopOf="@+id/progressLogin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCadastre_se" />
+
+    <ProgressBar
+        android:id="@+id/progressLogin"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:indeterminateTint="@color/vermelho"
+        android:progressTint="@color/vermelho"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContinuarSLogin" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
