@@ -1,7 +1,7 @@
 package com.example.tcc.model;
 
 public class Usuario {
-    private String id, nome, email, senha, confirmaSenha;
+    private String id, nome, email, senha, confirmaSenha,cpf, cep, logradouro;
 
     public Usuario(){
     }
@@ -44,5 +44,29 @@ public class Usuario {
 
     public void setConfirmaSenha(String confirmaSenha) {
         this.confirmaSenha = confirmaSenha;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    public String getLogradouro() {
+        return logradouro;
+    }
+
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
     }
 }

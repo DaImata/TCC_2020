@@ -1,5 +1,6 @@
 package com.example.tcc.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,8 +8,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.tcc.R;
+import com.example.tcc.activity.MainActivity;
+import com.example.tcc.activity.TelaCadastro;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,7 +31,11 @@ public class Carrinho extends Fragment {
     private String mParam2;
 
     public Carrinho() {
-        // Required empty public constructor
+
+    }
+
+    public void onClick(View view){
+        Toast.makeText(getActivity(),"Compra finalizada!",Toast.LENGTH_SHORT).show();
     }
 
     /**
@@ -60,7 +68,9 @@ public class Carrinho extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_carrinho, container, false);
+
     }
 }

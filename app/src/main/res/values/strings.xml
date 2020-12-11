@@ -21,5 +21,26 @@
     <string name="minha_conta">Minha Conta</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="meus_dados">Meus Dados</string>
+    <string name="nome">Nome</string>
+    <string name="logradouro">Logradouro</string>
+    <string name="cpf">CPF</string>
+    <string name="alterar_dados">Alterar Dados</string>
+    <string name="produtos">Produtos</string>
+    <string name="cachorro">Cachorro</string>
+    <string name="gato">Gato</string>
+    <string name="passaro">Passaro</string>
+    <string name="peixe">Peixe</string>
+    <string name="produto_em_destaque">Produto em Destaque</string>
+    <string name="reptil">Réptil</string>
+    <string name="ra_o_whiskas_carne_para_gatos_adultos">Ração Whiskas Carne <br /> para Gatos Adultos 10 kg</string>
+    <string name="preco">R$115,90</string>
+    <string name="um">1</string>
+    <string name="finalizar_compra">Finalizar compra</string>
+    <string name="m_todo_de_pagamento">Método de Pagamento:</string>
+    <string name="pagamentos_em_dinheiro_ser_o_cobrados_no_endere_o_de_entrega">Pagamentos em dinheiro serão cobrados no <br />
+        endereço de entrega</string>
+    <string name="dinheiro">Dinheiro</string>
+    <string name="carataodecredito">Cartão de Crédito</string>
 
 </resources>

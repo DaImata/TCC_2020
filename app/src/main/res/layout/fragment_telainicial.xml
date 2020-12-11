@@ -10,13 +10,223 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textView"
+        <ImageView
+            android:id="@+id/imgIlustracao"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:contentDescription="@string/vazio"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_gatonatal" />
+
+        <ImageView
+            android:id="@+id/bolinha_azul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/home"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/vazio"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/imgIlustracao"
+            app:srcCompat="@drawable/ic_bolinha_azul" />
+
+        <ImageView
+            android:id="@+id/bolinha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/vazio"
+            app:layout_constraintEnd_toStartOf="@+id/bolinha2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bolinha_azul"
+            app:layout_constraintTop_toBottomOf="@+id/imgIlustracao"
+            app:srcCompat="@drawable/ic_bolinha_azul"
+            app:tint="@color/cinza" />
+
+        <ImageView
+            android:id="@+id/bolinha2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/vazio"
+            app:layout_constraintEnd_toStartOf="@+id/bolinha3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bolinha"
+            app:layout_constraintTop_toBottomOf="@+id/imgIlustracao"
+            app:srcCompat="@drawable/ic_bolinha_azul"
+            app:tint="@color/cinza" />
+
+        <ImageView
+            android:id="@+id/bolinha3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/vazio"
+            app:layout_constraintEnd_toStartOf="@+id/bolinha4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bolinha2"
+            app:layout_constraintTop_toBottomOf="@+id/imgIlustracao"
+            app:srcCompat="@drawable/ic_bolinha_azul"
+            app:tint="@color/cinza" />
+
+        <ImageView
+            android:id="@+id/bolinha4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/vazio"
+            app:layout_constraintEnd_toStartOf="@+id/bolinha5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bolinha3"
+            app:layout_constraintTop_toBottomOf="@+id/imgIlustracao"
+            app:srcCompat="@drawable/ic_bolinha_azul"
+            app:tint="@color/cinza" />
+
+        <ImageView
+            android:id="@+id/bolinha5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:contentDescription="@string/vazio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bolinha4"
+            app:layout_constraintTop_toBottomOf="@+id/imgIlustracao"
+            app:srcCompat="@drawable/ic_bolinha_azul"
+            app:tint="@color/cinza" />
+
+        <TextView
+            android:id="@+id/txtCategoriaHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/categorias"
+            android:textColor="@color/fundoAzul"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bolinha_azul" />
+
+        <ImageView
+            android:id="@+id/imgCachorro"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/cachorro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCategoriaHome"
+            app:srcCompat="@drawable/img_cachorro" />
+
+        <TextView
+            android:id="@+id/txtCachorro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/cachorro"
+            app:layout_constraintEnd_toEndOf="@+id/imgCachorro"
+            app:layout_constraintStart_toStartOf="@+id/imgCachorro"
+            app:layout_constraintTop_toBottomOf="@+id/imgCachorro" />
+
+        <ImageView
+            android:id="@+id/imgGato"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/gato"
+            app:layout_constraintStart_toEndOf="@+id/imgCachorro"
+            app:layout_constraintTop_toBottomOf="@+id/txtCategoriaHome"
+            app:srcCompat="@drawable/img_gato" />
+
+        <TextView
+            android:id="@+id/txtGato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/gato"
+            app:layout_constraintEnd_toEndOf="@+id/imgGato"
+            app:layout_constraintStart_toStartOf="@+id/imgGato"
+            app:layout_constraintTop_toBottomOf="@+id/imgGato" />
+
+        <ImageView
+            android:id="@+id/imgPassaro"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/passaro"
+            app:layout_constraintStart_toEndOf="@+id/imgGato"
+            app:layout_constraintTop_toBottomOf="@+id/txtCategoriaHome"
+            app:srcCompat="@drawable/img_passaro" />
+
+        <TextView
+            android:id="@+id/txtPassaro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/passaro"
+            app:layout_constraintEnd_toEndOf="@+id/imgPassaro"
+            app:layout_constraintStart_toStartOf="@+id/imgPassaro"
+            app:layout_constraintTop_toBottomOf="@+id/imgPassaro" />
+
+        <ImageView
+            android:id="@+id/imgPeixe"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/peixe"
+            app:layout_constraintStart_toEndOf="@+id/imgPassaro"
+            app:layout_constraintTop_toBottomOf="@+id/txtCategoriaHome"
+            app:srcCompat="@drawable/img_peixe" />
+
+        <TextView
+            android:id="@+id/txtPeixe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/peixe"
+            app:layout_constraintEnd_toEndOf="@+id/imgPeixe"
+            app:layout_constraintStart_toStartOf="@+id/imgPeixe"
+            app:layout_constraintTop_toBottomOf="@+id/imgPeixe" />
+
+        <TextView
+            android:id="@+id/txtProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/produto_em_destaque"
+            android:textColor="@color/fundoAzul"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCachorro" />
+
+        <ImageView
+            android:id="@+id/imgProduto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/cachorro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtProduto"
+            app:srcCompat="@drawable/img_racao" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
